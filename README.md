@@ -17,28 +17,31 @@ An organized and effective way to show the projects I have been involved in this
 
 ### Description
 
-The Horiseon marketing agency website is divided into five elements:
+The Bootcamp Portfolio website is divided into six elements:
 
 **Header**  
-Includes a navigation bar with the brand name on the left and a link pointing to the Home Page, and on the right side are the Search Engine Optimization, Online Reputation Management, and Social Media Marketing links pointing to the respective sections on the website.
+Includes a navigation bar with the brand name on the left and a link pointing to the Home Page, and on the right side are the **About Me**, **Work**, and **Contact Me** links pointing to the respective sections on the website.
 
-**Navigation**  
+**Section Hero Banner**  
 Right after the top bar, there is the "Digital Marketing Meeting" image, which occupies the entire navigation element.
 
-**Section**  
-On the left side with four articles Search Engine Optimization, Online reputation management, and Social media marketing, with their descriptions and images, where each of the titles is the destination of the links from the Header.
+**Section About Me**  
+Cool text about me.
 
-**Aside**  
-On the right side with three sections, Lead Generation, Brand Awareness, and Cost Management, and their icons and descriptions.
+**Section Work**  
+Here is where I will publish my most recent works.
+
+**Section Contact Me**  
+Here is where the contacts are found.
 
 **Footer**  
 The footer is where the copyright is found.
 
 ### Mock-Up
 
-The image below illustrates the Horiseon web page appearance:  
+The image below illustrates the Bootcamp Portfolio web page appearance:  
 
-![Mock up Horiseon web page](/Assets/Mock-up-Horiseon-web-page.png)
+![Mock up Horiseon web page]()
 
 ### Contributing
 
@@ -49,18 +52,18 @@ Besides coding, you can contribute to user interface design, graphic design, wri
 
 Ways you can contribute:
 
-* [Submit bugs and feature requests](https://github.com/CZ-RBelo/Edx-Bootcamp-Module-01-HTML-CSS-Git-Challenge/issues)
-* [Review source code changes](https://github.com/CZ-RBelo/Edx-Bootcamp-Module-01-HTML-CSS-Git-Challenge/pulls)
+* [Submit bugs and feature requests](https://github.com/CZ-RBelo/Edx-Bootcamp-Portfolio/issues)
+* [Review source code changes](https://github.com/CZ-RBelo/Edx-Bootcamp-Portfolio/pulls)
 
 > **Spell check errors**  
 >Pull requests that fix spell-check errors are welcomed.  
->If you want to give feedback or report an issue, please create a [new GitHub issue](https://github.com/CZ-RBelo/Edx-Bootcamp-Module-01-HTML-CSS-Git-Challenge/issues/new).  
+>If you want to give feedback or report an issue, please create a [new GitHub issue](https://github.com/CZ-RBelo/Edx-Bootcamp-Portfolio/issues/new).  
 >**Please check if a topic about your issue already exists!**
 
 ### Links
 
-* [Github Repository](https://github.com/CZ-RBelo/Edx-Bootcamp-Module-01-HTML-CSS-Git-Challenge.git)
-* [Deployed Application](https://cz-rbelo.github.io/Edx-Bootcamp-Module-01-HTML-CSS-Git-Challenge/)
+* [Github Repository](https://github.com/CZ-RBelo/Edx-Bootcamp-Portfolio.git)
+* [Deployed Application](https://cz-rbelo.github.io/Edx-Bootcamp-Portfolio/)
 
 ### Credits
 
