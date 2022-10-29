@@ -1,0 +1,78 @@
+/* variables */
+:root {
+  --navBarColor: #094067;
+  --navBarHighlightColor: #3da9fc;
+  --navBarTextColor: #fffffe;
+  --navBarTextColorHover: #ef4565;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+/* main logo / nav bar */
+.navBar {
+  display: flex;
+  background-color: var(--navBarColor);
+  padding: 20px;
+}
+/* nav bar defenition*/
+.navBarLeft, .navBarCenter, .navBarRight {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* nav bar Center & Left size*/
+.navBarLeft, .navBarCenter {
+  width: 25%;
+}
+/* nav bar Right size*/
+.navBarRight {
+  width: 50%;
+}
+/* nav bar Links*/
+.navBarRight a {
+  color: var(--navBarTextColor);
+  padding: 5px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  font-family:arial;
+}
+/* nav bar Links Hover*/
+.navBarRight a:hover{
+  background-color: var(--navBarHighlightColor);
+  color: var(--navBarTextColorHover);
+  font-weight: bold;
+  border-radius: 5px;  
+}
+/* nav bar Left Logo*/
+.navBarLeft h1 {
+  background-color: var(--navBarHighlightColor);
+  color:var(--navBarTextColor);
+  border-radius: 5px;
+  font-size: 22px;
+  padding: 5px 25px;  
+}
