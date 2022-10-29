@@ -4,12 +4,9 @@
   --navBarHighlightColor: #3da9fc;
   --navBarTextColor: #fffffe;
   --navBarTextColorHover: #ef4565;
+  --secondaryColor:#90b4ce;
 }
-
-* {
-  box-sizing: border-box;
-}
-
+/* Body Css Set */
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +14,15 @@ body {
   line-height: 1.5;
 }
 
+/* Typography CSS */
+h2{
+  font-size: 18px;  
+}
+h3{
+  font-size: 16px;  
+}
+/* Set margin 0 */
+p,
 h1,
 h2,
 h3,
@@ -25,35 +31,28 @@ h5,
 h6 {
   margin: 0;
 }
-
-p {
-  margin: 0;
-}
-
-
-
-/* main logo / nav bar */
+/* main logo / navigation bar */
 .navBar {
   display: flex;
   background-color: var(--navBarColor);
   padding: 20px;
 }
-/* nav bar defenition*/
+/* navigation bar defenition */
 .navBarLeft, .navBarCenter, .navBarRight {
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* nav bar Center & Left size*/
+/* navigation bar Center & Left size */
 .navBarLeft, .navBarCenter {
   width: 25%;
 }
-/* nav bar Right size*/
+/* navigation bar Right size*/
 .navBarRight {
   width: 50%;
 }
-/* nav bar Links*/
+/* navigation bar Links */
 .navBarRight a {
   color: var(--navBarTextColor);
   padding: 5px 15px;
@@ -61,14 +60,14 @@ p {
   text-decoration: none;
   font-family:arial;
 }
-/* nav bar Links Hover*/
+/* navigation bar Links Hover */
 .navBarRight a:hover{
   background-color: var(--navBarHighlightColor);
   color: var(--navBarTextColorHover);
   font-weight: bold;
   border-radius: 5px;  
 }
-/* nav bar Left Logo*/
+/* navigation bar Left Logo */
 .navBarLeft h1 {
   background-color: var(--navBarHighlightColor);
   color:var(--navBarTextColor);
@@ -76,3 +75,33 @@ p {
   font-size: 22px;
   padding: 5px 25px;  
 }
+/* Bio -> Main */
+.bio-main {
+  width: auto;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1%;
+}
+/* Bio -> Paragraph */
+.bio-box {
+  position: fixed;
+  top: 30%;
+  right: 17%;
+  width: 500px;
+  background-color: var(--secondaryColor);
+  border-bottom: 10px solid var(--navBarTextColorHover);
+  opacity: 0.8;
+  padding: 25px 25px;
+  text-align: right;
+}
+/* Bio -> Image */
+/*
+#bio-image {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  right: 5%;
+}
+*/
