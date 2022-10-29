@@ -64,6 +64,7 @@ Ways you can contribute:
 
 * [Github Repository](https://github.com/CZ-RBelo/Edx-Bootcamp-Portfolio.git)
 * [Deployed Application](https://cz-rbelo.github.io/Edx-Bootcamp-Portfolio/)
+* [Project Task List](https://github.com/CZ-RBelo/Edx-Bootcamp-Portfolio/issues/1)
 
 ### Credits
 

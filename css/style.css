@@ -13,7 +13,6 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
 /* Typography CSS */
 h2{
   font-size: 18px;  
@@ -35,7 +34,7 @@ h6 {
 .navBar {
   display: flex;
   background-color: var(--navBarColor);
-  padding: 20px;
+  padding: 20px 0px;
 }
 /* navigation bar defenition */
 .navBarLeft, .navBarCenter, .navBarRight {
@@ -45,8 +44,8 @@ h6 {
   align-items: center;
 }
 /* navigation bar Center & Left size */
-.navBarLeft, .navBarCenter {
-  width: 25%;
+.navBarCenter {
+  width: 35%;
 }
 /* navigation bar Right size*/
 .navBarRight {
@@ -58,7 +57,7 @@ h6 {
   padding: 5px 15px;
   font-size: 16px;
   text-decoration: none;
-  font-family:arial;
+  font-weight: bold;
 }
 /* navigation bar Links Hover */
 .navBarRight a:hover{
@@ -68,12 +67,16 @@ h6 {
   border-radius: 5px;  
 }
 /* navigation bar Left Logo */
-.navBarLeft h1 {
+.navBarLeft{
+  width: 15%;
   background-color: var(--navBarHighlightColor);
+  border-radius: 0px 5px 5px 0px;
+}
+.navBarLeft h1 {
   color:var(--navBarTextColor);
-  border-radius: 5px;
   font-size: 22px;
-  padding: 5px 25px;  
+  padding: 5px 25px;
+  left: 0px;  
 }
 /* Bio -> Main */
 .bio-main {
