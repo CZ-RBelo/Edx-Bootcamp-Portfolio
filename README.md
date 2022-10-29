@@ -41,7 +41,7 @@ The footer is where the copyright is found.
 
 The image below illustrates the Bootcamp Portfolio web page appearance:  
 
-![Mock up Horiseon web page](.\images\rbelo-portfolio-mockup.jpg)
+![Mock up Horiseon web page](images/rbelo-portfolio-mockup.jpg)
 
 ### Contributing
 
