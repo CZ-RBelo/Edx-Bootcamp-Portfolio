@@ -71,12 +71,17 @@ h6 {
   width: 15%;
   background-color: var(--navBarHighlightColor);
   border-radius: 0px 5px 5px 0px;
+  padding: 0px 10px;
 }
+/* navigation bar Left Logo h1*/
 .navBarLeft h1 {
   color:var(--navBarTextColor);
   font-size: 22px;
-  padding: 5px 25px;
-  left: 0px;  
+}
+/* navigation bar Left Logo h2*/
+.navBarLeft h2 {
+  color:var(--navBarTextColorHover);
+  font-size: 20px;
 }
 /* Bio -> Main */
 .bio-main {
@@ -84,11 +89,11 @@ h6 {
   height: 600px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 1%;
+  margin-bottom: 5%;
 }
 /* Bio -> Paragraph */
 .bio-box {
-  position: fixed;
+  position:absolute;
   top: 30%;
   right: 17%;
   width: 500px;
@@ -108,3 +113,64 @@ h6 {
   right: 5%;
 }
 */
+/* element grid definition*/
+.page-wrapper {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 25% 75%;
+  grid-template-areas:
+  "about about-paragraph "
+  "work work-projects "
+  "contact contact-links"
+  ;
+}
+/* element grid position*/
+.page-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+/* element grid about me section*/
+#about {
+  grid-area: about;
+  border-right: 10px solid var(--navBarTextColorHover);
+  align-content: start;
+  justify-content: end;
+}
+/* element grid about me paragraph section*/
+#about-paragraph {
+  grid-area: about-paragraph;
+  align-content: start;
+  justify-content: start;
+}
+/* element grid work section*/
+#work {
+  grid-area: work;
+  border-right: 10px solid var(--navBarTextColorHover);
+  align-content: start;
+  justify-content: end;
+}
+/* element grid work projects section*/
+#work-projects {
+  grid-area: work-projects;
+  align-content: start;
+  justify-content: start;
+}
+/* element grid contact section*/
+#contact {
+  grid-area: contact;
+  border-right: 10px solid var(--navBarTextColorHover);
+  align-content: center;
+  justify-content: end;
+}
+/* element grid contact links*/
+#contact-links {
+  grid-area: contact-links;
+  align-content: center;
+  justify-content: start;
+}
