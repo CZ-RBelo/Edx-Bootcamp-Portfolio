@@ -120,7 +120,7 @@ font-size: 18px;
   justify-content: center;
   align-items: center;
 }
-/* navigation bar Center & Left size */
+/* navigation bar Center size */
 .navBarCenter {
   width: 35%;
 }
@@ -130,7 +130,7 @@ font-size: 18px;
 }
 /* navigation bar Left Logo */
 .navBarLeft{
-  width: 15%;
+  width: 250px;
   background-color: var(--navBarHighlightColor);
   border-radius: 0px 5px 5px 0px;
   padding: 0px 10px;
@@ -276,8 +276,121 @@ font-size: 18px;
 }
 /* mobile responsive website @media screen */
 @media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
+ 
+/* Typography CSS */
+
+
+/* element grid about-me paragraph decoration */
+#about-paragraph p {
+  padding: 0px 1px;
+  font-size: 12px;
+}
+/* navigation bar Left Logo h1*/
+.navBarLeft h1 {
+  color:var(--navBarTextColor);
+  font-size: 18px;
+}
+/* container work projects page-section about & work & contact h2 decoration */
+#about h2, #work h2, #contact h2{
+  font-size: 16px;
+  margin-right: 3px;
   }
+/* navigation bar Left Logo h2*/
+.navBarLeft h2 {
+  color:var(--navBarTextColorHover);
+  font-size: 16px;
+}
+/* nav element -> bio h2 */
+.bio-box h2{
+  font-size: 14px;
+  color: var(--navBarColor);  
+}
+/* nav element -> bio h3 */
+.bio-box h3{
+  font-size: 12px;
+  color: var(--navBarTextColorHover);  
+}
+
+/* element grid about-me contact links decoration */
+#contact-links a {
+  border-bottom:1px solid var(--navBarColor);
+  padding: 5px 5px;
+  font-size: 12px;
+}
+/* element grid contact links hover decoration */
+#contact-links a:hover{
+  border-bottom:1px solid var(--navBarTextColorHover);  
+}
+
+/* navigation bar Links */
+.navBarRight a {
+  color: var(--navBarTextColor);
+  padding: 0px 5px;
+  font-size: 14px;
+}
+/* navigation bar Left size */
+.navBarLeft{
+  width: 160px;
+  background-color: var(--navBarHighlightColor);
+  padding: 0px 0px;
+}
+/* navigation bar Center */
+.navBarCenter {
+  width: 35%;
+}
+/* navigation bar Right size*/
+.navBarRight {
+  width: 200px;
+  padding: 0px 0px;
+}
+/* main logo / navigation bar */
+.navBar {
+  flex-direction: column;
+  height: 50px;
+  padding: 10px 0px 5px 0px;
+}
+/* Bio -> Main */
+.bio-main {
+  width: auto;
+  height: 300px;
+/*   background-size: cover;
+  background-position: center;
+  margin-bottom: 2%; */
+}
+/* Bio -> Paragraph */
+.bio-box {
+  position:absolute;
+  top: 200px;
+  right: 15px;
+  width: 250px;
+  border-bottom: 5px solid var(--navBarTextColorHover);
+  opacity: 0.8;
+  padding: 5px 15px;
+  text-align: right;
+}
+/* element grid definition*/
+.page-wrapper {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 15% 1fr;
+  grid-template-areas:
+  "about about-paragraph "
+  "work work-projects "
+  "contact contact-links"
+  ;
+}
+/* element grid position*/
+.page-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  display: grid;
+  align-content: end;
+}
+#about, #contact {
+  border-right: 2px solid var(--navBarTextColorHover);
+}
+
 }
