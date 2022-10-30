@@ -89,7 +89,7 @@ h6 {
   height: 600px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 /* Bio -> Paragraph */
 .bio-box {
@@ -117,8 +117,8 @@ h6 {
 .page-wrapper {
   margin: 0px 5%;
   display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 25% 75%;
+  grid-template-rows: auto 300px auto;
+  grid-template-columns: 10% 1fr;
   grid-template-areas:
   "about about-paragraph "
   "work work-projects "
@@ -135,12 +135,18 @@ h6 {
   display: grid;
   align-content: end;
 }
+#about h2, #work h2, #contact h2{
+font-size: 30px;
+margin-right: 15px; 
+color: var(--navBarColor);
+}
 /* element grid about me section*/
 #about {
   grid-area: about;
-  border-right: 10px solid var(--navBarTextColorHover);
+  border-right: 7px solid var(--navBarTextColorHover);
   align-content: start;
   justify-content: end;
+  text-align: right;
 }
 /* element grid about me paragraph section*/
 #about-paragraph {
@@ -151,7 +157,7 @@ h6 {
 /* element grid work section*/
 #work {
   grid-area: work;
-  border-right: 10px solid var(--navBarTextColorHover);
+  border-right: 7px solid var(--navBarTextColorHover);
   align-content: start;
   justify-content: end;
 }
@@ -164,13 +170,29 @@ h6 {
 /* element grid contact section*/
 #contact {
   grid-area: contact;
-  border-right: 10px solid var(--navBarTextColorHover);
+  border-right: 7px solid var(--navBarTextColorHover);
   align-content: center;
   justify-content: end;
+  text-align: right;
 }
-/* element grid contact links*/
+/* element grid contact links */
 #contact-links {
   grid-area: contact-links;
   align-content: center;
-  justify-content: start;
+  justify-content: start;  
+}
+/* element grid contact links decoration */
+#about-paragraph h3, #contact-links a {
+  color: var(--navBarColor);
+  padding: 5px 15px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* element grid contact links hover decoration */
+#contact-links a:hover{
+  background-color: var(--navBarHighlightColor);
+  color: var(--navBarTextColorHover);
+  font-weight: bold;
+  border-radius: 5px;  
 }
