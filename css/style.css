@@ -117,7 +117,7 @@ h6 {
 .page-wrapper {
   margin: 0px 5%;
   display: grid;
-  grid-template-rows: auto 300px auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: 10% 1fr;
   grid-template-areas:
   "about about-paragraph "
@@ -131,10 +131,11 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
-  cursor: pointer;
   display: grid;
   align-content: end;
 }
+
+
 #about h2, #work h2, #contact h2{
 font-size: 30px;
 margin-right: 15px; 
@@ -195,4 +196,47 @@ color: var(--navBarColor);
   color: var(--navBarTextColorHover);
   font-weight: bold;
   border-radius: 5px;  
+}
+
+
+.work-projects-container{
+ /*  margin: 0px 5%; */
+  display: grid;
+  grid-template-rows: 600px 300px 300px;
+  grid-template-columns: 600px 600px;
+  grid-template-areas:
+  "featuredProject featuredProject "
+  "Project1 Project2 "
+  "Project3 Project4"
+  ;
+}
+/* element grid position*/
+.work-projects-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+#featuredProject {
+  grid-area: featuredProject;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+#Project1 {
+  grid-area: Project1;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+#Project2 {
+  grid-area: Project2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+#Project3 {
+  grid-area: Project3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+#Project4 {
+  grid-area: Project4;
+  background-image: url("../images/02-portfolio-4.jpg");
 }
