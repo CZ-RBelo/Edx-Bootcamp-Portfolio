@@ -197,8 +197,6 @@ color: var(--navBarColor);
   font-weight: bold;
   border-radius: 5px;  
 }
-
-
 .work-projects-container{
  /*  margin: 0px 5%; */
   display: grid;
@@ -219,10 +217,11 @@ color: var(--navBarColor);
   cursor: pointer;
   display: grid;
   align-content: end;
+  border: 3px solid var(--navBarColor);
 }
 #featuredProject {
   grid-area: featuredProject;
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
 }
 #Project1 {
   grid-area: Project1;
@@ -238,5 +237,24 @@ color: var(--navBarColor);
 }
 #Project4 {
   grid-area: Project4;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.work-projects-section h2 {
+background-color: var(--navBarColor);
+padding: 1% 1% 0% 1%;
+text-align: left;
+width: 30%;
+color: var(--navBarTextColor);
+font-size: 18px;
+}
+.work-projects-section h3 {
+  padding: 0% 1% 1% 1%;
+  background-color: var(--navBarColor);
+  text-align: left;
+  width: 30%;
+  color: var(--navBarTextColor);
+  font-size: 14px;
+  margin-bottom: 5%;
+  font-weight:lighter;
 }
