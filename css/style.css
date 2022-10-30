@@ -14,13 +14,9 @@ body {
   line-height: 1.5;
 }
 /* Typography CSS */
-h2{
-  font-size: 18px;  
-}
-h3{
-  font-size: 16px;  
-}
+
 /* Set margin 0 */
+a,
 p,
 h1,
 h2,
@@ -29,6 +25,87 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+/* element grid about-me paragraph decoration */
+#about-paragraph p {
+  color: var(--navBarColor);
+  padding: 5px 15px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* navigation bar Left Logo h1*/
+.navBarLeft h1 {
+  color:var(--navBarTextColor);
+  font-size: 22px;
+}
+/* navigation bar Left Logo h2*/
+.navBarLeft h2 {
+  color:var(--navBarTextColorHover);
+  font-size: 20px;
+}
+/* container work projects page-section about & work & contact h2 decoration */
+#about h2, #work h2, #contact h2{
+  font-size: 30px;
+  margin-right: 15px; 
+  color: var(--navBarColor);
+  }
+/* nav element -> bio h2 */
+.bio-box h2{
+  font-size: 18px;
+  color: var(--navBarColor);  
+}
+/* nav element -> bio h3 */
+.bio-box h3{
+  font-size: 16px;
+  color: var(--navBarTextColorHover);  
+}
+/* work-projects-section h3 decoration */
+.work-projects-section h3 {
+background-color: var(--navBarColor);
+padding: 1% 1% 0% 1%;
+text-align: left;
+width: 30%;
+color: var(--navBarTextColor);
+font-size: 18px;
+}
+/* work-projects-section h4 decoration */
+.work-projects-section h4 {
+  padding: 0% 1% 1% 1%;
+  background-color: var(--navBarColor);
+  text-align: left;
+  width: 30%;
+  color: var(--navBarTextColor);
+  font-size: 14px;
+  margin-bottom: 5%;
+  font-weight:lighter;
+}
+/* element grid about-me contact links decoration */
+#contact-links a {
+  color: var(--navBarColor);
+  border-bottom:3px solid var(--navBarColor);
+  padding: 5px 15px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* element grid contact links hover decoration */
+#contact-links a:hover{
+  border-bottom:3px solid var(--navBarTextColorHover);  
+  font-weight: bold;  
+}
+/* navigation bar Links */
+.navBarRight a {
+  color: var(--navBarTextColor);
+  padding: 5px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* navigation bar Links Hover */
+.navBarRight a:hover{
+  border-bottom:3px solid var(--navBarTextColorHover);  
+  font-weight: bold;
 }
 /* main logo / navigation bar */
 .navBar {
@@ -51,37 +128,12 @@ h6 {
 .navBarRight {
   width: 50%;
 }
-/* navigation bar Links */
-.navBarRight a {
-  color: var(--navBarTextColor);
-  padding: 5px 15px;
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: bold;
-}
-/* navigation bar Links Hover */
-.navBarRight a:hover{
-  background-color: var(--navBarHighlightColor);
-  color: var(--navBarTextColorHover);
-  font-weight: bold;
-  border-radius: 5px;  
-}
 /* navigation bar Left Logo */
 .navBarLeft{
   width: 15%;
   background-color: var(--navBarHighlightColor);
   border-radius: 0px 5px 5px 0px;
   padding: 0px 10px;
-}
-/* navigation bar Left Logo h1*/
-.navBarLeft h1 {
-  color:var(--navBarTextColor);
-  font-size: 22px;
-}
-/* navigation bar Left Logo h2*/
-.navBarLeft h2 {
-  color:var(--navBarTextColorHover);
-  font-size: 20px;
 }
 /* Bio -> Main */
 .bio-main {
@@ -134,13 +186,6 @@ h6 {
   display: grid;
   align-content: end;
 }
-
-
-#about h2, #work h2, #contact h2{
-font-size: 30px;
-margin-right: 15px; 
-color: var(--navBarColor);
-}
 /* element grid about me section*/
 #about {
   grid-area: about;
@@ -182,33 +227,18 @@ color: var(--navBarColor);
   align-content: center;
   justify-content: start;  
 }
-/* element grid contact links decoration */
-#about-paragraph h3, #contact-links a {
-  color: var(--navBarColor);
-  padding: 5px 15px;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: bold;
-}
-/* element grid contact links hover decoration */
-#contact-links a:hover{
-  background-color: var(--navBarHighlightColor);
-  color: var(--navBarTextColorHover);
-  font-weight: bold;
-  border-radius: 5px;  
-}
+/* work projects container */
 .work-projects-container{
- /*  margin: 0px 5%; */
-  display: grid;
+   display: grid;
   grid-template-rows: 600px 300px 300px;
   grid-template-columns: 600px 600px;
   grid-template-areas:
   "featuredProject featuredProject "
-  "Project1 Project2 "
-  "Project3 Project4"
+  "project1 project2 "
+  "project3 project4"
   ;
 }
-/* element grid position*/
+/* work projects element grid position*/
 .work-projects-section {
   background-position: center;
   background-size: cover;
@@ -219,42 +249,35 @@ color: var(--navBarColor);
   align-content: end;
   border: 3px solid var(--navBarColor);
 }
+/* element grid featuredProject section*/
 #featuredProject {
   grid-area: featuredProject;
   background-image: url("../images/02-portfolio-4.jpg");
 }
-#Project1 {
-  grid-area: Project1;
+/* element grid project1 section*/
+#project1 {
+  grid-area: project1;
   background-image: url("../images/02-portfolio-1.jpg");
 }
-#Project2 {
-  grid-area: Project2;
+/* element grid project2 section*/
+#project2 {
+  grid-area: project2;
   background-image: url("../images/02-portfolio-2.jpg");
 }
-#Project3 {
-  grid-area: Project3;
+/* element grid project3 section*/
+#project3 {
+  grid-area: project3;
   background-image: url("../images/02-portfolio-3.jpg");
 }
-#Project4 {
-  grid-area: Project4;
+/* element grid project4 section*/
+#project4 {
+  grid-area: project4;
   background-image: url("../images/02-run-buddy.jpg");
 }
-
-.work-projects-section h2 {
-background-color: var(--navBarColor);
-padding: 1% 1% 0% 1%;
-text-align: left;
-width: 30%;
-color: var(--navBarTextColor);
-font-size: 18px;
-}
-.work-projects-section h3 {
-  padding: 0% 1% 1% 1%;
-  background-color: var(--navBarColor);
-  text-align: left;
-  width: 30%;
-  color: var(--navBarTextColor);
-  font-size: 14px;
-  margin-bottom: 5%;
-  font-weight:lighter;
+/* mobile responsive website @media screen */
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
