@@ -34,8 +34,8 @@ h6 {
 }
 /* element grid about-me paragraph decoration */
 #about-paragraph p {
-  color: var(--navBarColor);
-  /* padding: 5px 15px; */
+  /* color: var(--navBarColor); */
+  color: var(--navBarTextColor);
   font-size: 18px;
   text-decoration: none;
   font-weight: bold;
@@ -82,7 +82,7 @@ font-size: 18px;
   width: 30%;
   color: var(--navBarTextColor);
   font-size: 14px;
-  /* margin-bottom: 5%; */
+  margin-bottom: 30px;
   font-weight:lighter;
 }
 /* element grid about-me contact links decoration */
@@ -201,8 +201,7 @@ font-size: 18px;
   text-align: right;
 }
 /* section about-paragraph, work-projects, contact-links attributes  */
-#about-paragraph, #work-projects, #contact-links {
-  border-right: 7px solid var(--navBarTextColorHover);
+#about-paragraph, #work-projects, #contact-links {  
   align-content: center;
   justify-content: start; 
   padding: 5px;
@@ -234,9 +233,10 @@ font-size: 18px;
 /* work projects container */
 .work-projects-container{
   display: grid;
-  grid-template-rows: 400px 300px 300px;
+  grid-template-rows: 450px 300px 300px;
   grid-template-columns: 600px 600px;
-  grid-template-areas:
+  grid-gap: 10px;
+  grid-template-areas:  
   "featuredProject featuredProject "
   "project1 project2 "
   "project3 project4"
@@ -250,7 +250,8 @@ font-size: 18px;
   background-size:cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  border: 1px solid var(--navBarColor);
+  border: 3px solid var(--navBarColor);
+
 }
 /* element grid featuredProject section*/
 #featuredProject {
@@ -291,7 +292,7 @@ mobile responsive website @media screen 1024px
     visibility: visible;
     background-color: var(--navBarColor);
     border-color: var(--navBarColor);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 50%;
     border-style: solid;
     transform: rotateZ(-90deg);
@@ -305,9 +306,19 @@ mobile responsive website @media screen 1024px
    /* top button element  */
   #topButton {
     position: fixed;
-    bottom: 15px;
-    right: 10px;
+    bottom: 40px;
+    right: 20px;
   }
+  /* container work projects page-section about & work & contact h2 decoration */
+  #about h2, #work h2, #contact h2{
+    font-size: 20px;
+    margin-left: 15px;
+    text-align: left;
+  }
+/* about, work & contact attributes */  
+#about, #work, #contact {
+  border-right: none;
+}
 /* element grid definition*/
 .page-wrapper {
   display: block;
@@ -362,12 +373,6 @@ mobile responsive website @media screen 391px x 1024px
   color:var(--navBarTextColor);
   font-size: 18px;
   margin-left: 15px;
-}
-/* container work projects page-section about & work & contact h2 decoration */
-#about h2, #work h2, #contact h2{
-  font-size: 20px;
-  margin-left: 15px;
-  text-align: left;
 }
 /* navigation bar Left Logo h2*/
 .navBarLeft h2 {
@@ -465,12 +470,6 @@ mobile responsive website @media screen max 390px
     font-size: 18px;
     margin-left: 15px;
   }
-  /* container work projects page-section about & work & contact h2 decoration */
-  #about h2, #work h2, #contact h2{
-    font-size: 20px;
-    margin-left: 15px;
-    text-align: left;
-  }
   /* navigation bar Left Logo h2*/
   .navBarLeft h2 {
     color:var(--navBarTextColorHover);
@@ -550,9 +549,5 @@ mobile responsive website @media screen max 390px
     padding: 5px 15px;
     text-align: right;
     border-bottom: 5px solid var(--navBarTextColorHover);
-  }
-  /* about, work & contact attributes */  
-  #about, #work, #contact {
-    border-right: none;
   }  
   }
