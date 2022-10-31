@@ -17,14 +17,13 @@ An organized and effective way to show the projects that Rui Belo has been invol
 
 ### Description
 
-The Bootcamp Portfolio website is divided into six elements:
+The Bootcamp Portfolio website is divided into five elements:
 
 **Header**  
 Includes a navigation bar with the brand name on the left and a link pointing to the Home Page, and on the right side are the **About Me**, **Work**, and **Contact Me** links pointing to the respective sections on the website.
 
 **Section Bio Box**  
-Right after the top bar, there is the "Snowy mountains with blue sky" image, which occupies the entire navigation element.  
-And it has a floating bio box with a paragraph and a callout.
+Right after the top bar, there is the "Snowy mountains with blue sky" image, which occupies the entire navigation element. And it has a floating bio box with a paragraph and a callout.
 
 **Section About Me**  
 A block text where some of the skills are highlighted.
@@ -33,13 +32,17 @@ A block text where some of the skills are highlighted.
 Section where will be published the most recent projects.
 
 **Section Contact Me**  
-Here is where the contacts are found.
+Here is where the contacts are found.  
+Right after this section, there is a button to take the user quickly to the top of the page. The button will only be visible on the mobile or tablet version of the web page.
 
 ### Mock-Up
 
-The image below illustrates the Bootcamp Portfolio web page appearance:  
+The images below illustrates the Bootcamp Portfolio web page appearance:    
 
-![Mock-up Rui Belo Portfolio web page](images/rbelo-portfolio-mockup.png)
+![Desktop web page mock-up](images/rbelo-desktop-webpage-mockup.png) 
+  
+  
+[Mobile web page mock-up version link](images/rbelo-mobile-webpage-mockup.jpg) | [Tablet web page mock-up version link](images/rbelo-tablet-webpage-mockup.jpg)
 
 ### Contributing
 
