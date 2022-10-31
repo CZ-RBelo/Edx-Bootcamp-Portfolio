@@ -34,8 +34,7 @@ h6 {
 }
 /* element grid about-me paragraph decoration */
 #about-paragraph p {
-  /* color: var(--navBarColor); */
-  color: var(--navBarTextColor);
+  color: var(--navBarColor);
   font-size: 18px;
   text-decoration: none;
   font-weight: bold;
