@@ -12,6 +12,8 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  max-width: 100%;
+  max-height: 100%;
 }
 /* Typography CSS */
 
@@ -29,7 +31,7 @@ h6 {
 /* element grid about-me paragraph decoration */
 #about-paragraph p {
   color: var(--navBarColor);
-  padding: 5px 15px;
+  /* padding: 5px 15px; */
   font-size: 18px;
   text-decoration: none;
   font-weight: bold;
@@ -63,7 +65,6 @@ h6 {
 /* work-projects-section h3 decoration */
 .work-projects-section h3 {
 background-color: var(--navBarColor);
-padding: 1% 1% 0% 1%;
 text-align: left;
 width: 30%;
 color: var(--navBarTextColor);
@@ -71,20 +72,20 @@ font-size: 18px;
 }
 /* work-projects-section h4 decoration */
 .work-projects-section h4 {
-  padding: 0% 1% 1% 1%;
+  /* padding: 0% 1% 1% 1%; */
   background-color: var(--navBarColor);
   text-align: left;
   width: 30%;
   color: var(--navBarTextColor);
   font-size: 14px;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
   font-weight:lighter;
 }
 /* element grid about-me contact links decoration */
 #contact-links a {
   color: var(--navBarColor);
   border-bottom:3px solid var(--navBarColor);
-  padding: 5px 15px;
+  /* padding: 5px 15px; */
   font-size: 18px;
   text-decoration: none;
   font-weight: bold;
@@ -97,7 +98,7 @@ font-size: 18px;
 /* navigation bar Links */
 .navBarRight a {
   color: var(--navBarTextColor);
-  padding: 5px 15px;
+  padding: 0px 15px;
   font-size: 16px;
   text-decoration: none;
   font-weight: bold;
@@ -133,7 +134,6 @@ font-size: 18px;
   width: 250px;
   background-color: var(--navBarHighlightColor);
   border-radius: 0px 5px 5px 0px;
-  padding: 0px 10px;
 }
 /* Bio -> Main */
 .bio-main {
@@ -141,13 +141,13 @@ font-size: 18px;
   height: 600px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 2%;
+  margin-bottom: 15px;
 }
 /* Bio -> Paragraph */
 .bio-box {
   position:absolute;
-  top: 30%;
-  right: 17%;
+  top: 350px;
+  right: 50px;
   width: 500px;
   background-color: var(--secondaryColor);
   border-bottom: 10px solid var(--navBarTextColorHover);
@@ -167,7 +167,6 @@ font-size: 18px;
 */
 /* element grid definition*/
 .page-wrapper {
-  margin: 0px 5%;
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: 10% 1fr;
@@ -179,58 +178,54 @@ font-size: 18px;
 }
 /* element grid position*/
 .page-section {
+  display: grid;
+  align-content: end;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
-  display: grid;
-  align-content: end;
 }
-/* element grid about me section*/
+/* section about, work, contact attributes  */
+#about, #work, #contact {
+  border-right: 7px solid var(--navBarTextColorHover);
+  align-content: start;
+  justify-content:end;
+  text-align: right;
+}
+/* section about-paragraph, work-projects, contact-links attributes  */
+#about-paragraph, #work-projects, #contact-links {
+  border-right: 7px solid var(--navBarTextColorHover);
+  align-content: center;
+  justify-content: start; 
+  padding: 5px;
+}
+/* about me grid position*/
 #about {
   grid-area: about;
-  border-right: 7px solid var(--navBarTextColorHover);
-  align-content: start;
-  justify-content: end;
-  text-align: right;
 }
-/* element grid about me paragraph section*/
+/* about me paragraph grid position*/
 #about-paragraph {
   grid-area: about-paragraph;
-  align-content: start;
-  justify-content: start;
 }
-/* element grid work section*/
+/* work grid position*/
 #work {
   grid-area: work;
-  border-right: 7px solid var(--navBarTextColorHover);
-  align-content: start;
-  justify-content: end;
 }
-/* element grid work projects section*/
+/* work projects grid position*/
 #work-projects {
   grid-area: work-projects;
-  align-content: start;
-  justify-content: start;
 }
-/* element grid contact section*/
+/* contact grid position*/
 #contact {
   grid-area: contact;
-  border-right: 7px solid var(--navBarTextColorHover);
-  align-content: center;
-  justify-content: end;
-  text-align: right;
 }
-/* element grid contact links */
+/* contact links grid position*/
 #contact-links {
-  grid-area: contact-links;
-  align-content: center;
-  justify-content: start;  
+  grid-area: contact-links; 
 }
 /* work projects container */
 .work-projects-container{
-   display: grid;
-  grid-template-rows: 600px 300px 300px;
+  display: grid;
+  grid-template-rows: 400px 300px 300px;
   grid-template-columns: 600px 600px;
   grid-template-areas:
   "featuredProject featuredProject "
@@ -240,14 +235,13 @@ font-size: 18px;
 }
 /* work projects element grid position*/
 .work-projects-section {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 15px;
-  cursor: pointer;
   display: grid;
   align-content: end;
-  border: 3px solid var(--navBarColor);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid var(--navBarColor);
 }
 /* element grid featuredProject section*/
 #featuredProject {
@@ -274,123 +268,259 @@ font-size: 18px;
   grid-area: project4;
   background-image: url("../images/02-run-buddy.jpg");
 }
-/* mobile responsive website @media screen */
-@media screen and (max-width: 768px) {
+/* 
+
+commum settings
+
+mobile responsive website @media screen 1024px 
+
+*/
+@media screen and (max-width: 1024px) {
+/* element grid definition*/
+.page-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* element grid position*/
+.page-section {
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: end;
+  margin-bottom: 15px;
+}  
+/* work projects container */
+.work-projects-container{
+  display: block;
+  width: 100%;
+  height: 100%;
+  ;
+}
+/* work projects element grid position*/
+.work-projects-section {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border: 1px solid var(--navBarColor);
+}
+}
+/*
+mobile responsive website @media screen 391px x 1024px 
+
+
+*/
+@media screen and (max-width: 1024px) and (min-width: 391px) {
  
 /* Typography CSS */
 
-
 /* element grid about-me paragraph decoration */
 #about-paragraph p {
-  padding: 0px 1px;
-  font-size: 12px;
+  font-size: 16px;
+  margin-left: 15px;
 }
 /* navigation bar Left Logo h1*/
 .navBarLeft h1 {
   color:var(--navBarTextColor);
   font-size: 18px;
+  margin-left: 15px;
 }
 /* container work projects page-section about & work & contact h2 decoration */
 #about h2, #work h2, #contact h2{
-  font-size: 16px;
-  margin-right: 3px;
-  }
+  font-size: 20px;
+  margin-left: 15px;
+  text-align: left;
+}
 /* navigation bar Left Logo h2*/
 .navBarLeft h2 {
   color:var(--navBarTextColorHover);
   font-size: 16px;
+  margin-left: 3px;  
 }
 /* nav element -> bio h2 */
 .bio-box h2{
-  font-size: 14px;
+  font-size: 20px;
   color: var(--navBarColor);  
+}
+/* element featuredProject project1 project2 project3 project4 h3 position */
+#featuredProject h3, #project1 h3, #project2 h3, #project3  h3, #project4 h3{
+  margin-top: 200px;
 }
 /* nav element -> bio h3 */
 .bio-box h3{
-  font-size: 12px;
+  font-size: 16px;
   color: var(--navBarTextColorHover);  
 }
-
 /* element grid about-me contact links decoration */
 #contact-links a {
   border-bottom:1px solid var(--navBarColor);
-  padding: 5px 5px;
-  font-size: 12px;
+  margin-left: 15px;
+  font-size: 18px;
 }
 /* element grid contact links hover decoration */
 #contact-links a:hover{
   border-bottom:1px solid var(--navBarTextColorHover);  
 }
-
 /* navigation bar Links */
 .navBarRight a {
   color: var(--navBarTextColor);
-  padding: 0px 5px;
-  font-size: 14px;
+  padding: 5px 5px 0px 0px; 
+  font-size: 16px;
+  margin-left: 15px;
 }
 /* navigation bar Left size */
 .navBarLeft{
-  width: 160px;
+  width: 180px;
+  justify-content: flex-start;
   background-color: var(--navBarHighlightColor);
-  padding: 0px 0px;
 }
 /* navigation bar Center */
 .navBarCenter {
-  width: 35%;
+  width: 0px;
 }
 /* navigation bar Right size*/
 .navBarRight {
-  width: 200px;
-  padding: 0px 0px;
+  width: 300px;  
+  justify-content: flex-start;
 }
 /* main logo / navigation bar */
 .navBar {
   flex-direction: column;
-  height: 50px;
+  height: 60px;
   padding: 10px 0px 5px 0px;
 }
 /* Bio -> Main */
 .bio-main {
   width: auto;
   height: 300px;
-/*   background-size: cover;
-  background-position: center;
-  margin-bottom: 2%; */
 }
 /* Bio -> Paragraph */
 .bio-box {
   position:absolute;
-  top: 200px;
-  right: 15px;
-  width: 250px;
-  border-bottom: 5px solid var(--navBarTextColorHover);
+  top: 180px;
+  right: 25px;
+  width: 400px;  
   opacity: 0.8;
   padding: 5px 15px;
   text-align: right;
+  border-bottom: 5px solid var(--navBarTextColorHover);
 }
-/* element grid definition*/
-.page-wrapper {
-  margin: 0px 5%;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 15% 1fr;
-  grid-template-areas:
-  "about about-paragraph "
-  "work work-projects "
-  "contact contact-links"
-  ;
 }
-/* element grid position*/
-.page-section {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 5px;
-  display: grid;
-  align-content: end;
-}
-#about, #contact {
-  border-right: 2px solid var(--navBarTextColorHover);
-}
+/* 
 
-}
+mobile responsive website @media screen max 390px
+
+
+*/
+@media screen and (max-width: 390px) {
+ 
+  /* Typography CSS */
+    
+  /* element grid about-me paragraph decoration */
+  #about-paragraph p {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  /* navigation bar Left Logo h1*/
+  .navBarLeft h1 {
+    color:var(--navBarTextColor);
+    font-size: 18px;
+    margin-left: 15px;
+  }
+  /* container work projects page-section about & work & contact h2 decoration */
+  #about h2, #work h2, #contact h2{
+    font-size: 20px;
+    margin-left: 15px;
+    text-align: left;
+  }
+  /* navigation bar Left Logo h2*/
+  .navBarLeft h2 {
+    color:var(--navBarTextColorHover);
+    font-size: 16px;
+    margin-left: 3px;  
+  }
+  /* nav element -> bio h2 */
+  .bio-box h2{
+    font-size: 16px;
+    color: var(--navBarColor);  
+  }
+  /* nav element -> bio h3 */
+  .bio-box h3{
+    font-size: 14px;
+    color: var(--navBarTextColorHover);  
+  }
+  /* work-projects-section h3 decoration */
+.work-projects-section h3 {
+  width: 40%;
+  font-size: 16px;
+  margin-top: 200px;
+  }
+  .work-projects-section h4{
+    width: 40%;
+    font-size: 14px;
+  }
+  /* element grid about-me contact links decoration */
+  #contact-links a {
+    border-bottom:1px solid var(--navBarColor);
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  /* element grid contact links hover decoration */
+  #contact-links a:hover{
+    border-bottom:1px solid var(--navBarTextColorHover);  
+  }
+  /* navigation bar Links */
+  .navBarRight a {
+    color: var(--navBarTextColor);
+    padding: 5px 5px 0px 0px; 
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  /* navigation bar Left size */
+  .navBarLeft{
+    width: 180px;
+    justify-content: flex-start;
+    background-color: var(--navBarHighlightColor);
+  }
+  /* navigation bar Center */
+  .navBarCenter {
+    width: 0px;
+  }
+  /* navigation bar Right size*/
+  .navBarRight {
+    width: 300px;  
+    justify-content: flex-start;
+  }
+  /* main logo / navigation bar */
+  .navBar {
+    flex-direction: column;
+    height: 60px;
+    padding: 10px 0px 5px 0px;
+  }
+  /* Bio -> Main */
+  .bio-main {
+    width: auto;
+    height: 300px;
+  }
+  /* Bio -> Paragraph */
+  .bio-box {
+    position:absolute;
+    top: 180px;
+    right: 25px;
+    width: 220px;  
+    opacity: 0.8;
+    padding: 5px 15px;
+    text-align: right;
+    border-bottom: 5px solid var(--navBarTextColorHover);
+  }
+  /* about, work & contact attributes */  
+  #about, #work, #contact {
+    border-right: none;
+  }  
+  }

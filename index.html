@@ -17,9 +17,9 @@
     </section>
     <section class="navBarCenter"></section>
     <section class="navBarRight">
-          <a href="#">About Me</a>
-          <a href="#">Work</a>
-          <a href="#">Contact Me</a>             
+          <a href="#about">About Me</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact Me</a>             
     </section>
   </header>
   <!-- nav element -> bio main -->
@@ -39,34 +39,70 @@
       <br>
       <h3>Skilled in HTML and CSS.</h3>
     </section>
-     <!-- main element -> about me + portfolio projects + contacts -->
-    <main class="page-wrapper">
-      <!-- about me -->
-      <section class="page-section" id="about">
-        <h2>About<br>Me</h2>
-      </section>
-      <!-- about me paragraph -->
-      <section class="page-section" id="about-paragraph">
-        <p>Apart from the kitchen, I work well under pressure.<br>
-          I have excellent problem-solving skills and a logical approach to work. In the kitchen, I'm good at frying eggs.<br><br>
-          I have the power to learn new digital tools quickly and follow Lego instructions easily as well.<br>
-          I  can manage customer feedback well, but not so well when related to my Lego constructions.<br><br>
-          I love to work autonomously and creatively and integrated into a team.</p>
-      </section>
-
-      <!-- contact -->
-      <section class="page-section" id="contact">
-        <h2>Contact<br>Me</h2>
-      </section>
-      <!-- contact links -->
-      <section class="page-section" id="contact-links">
-        <section>
-          <a href="#">555.555.5555</a>
-          <a href="mailto: jr.belo@hotmail.com?subject=Hello.&body=Let's have a chat so that we can make it all start happening.">jr.belo@hotmail.com</a>
-          <a href="https://github.com/CZ-RBelo/" target=”_blank”>Git Hub</a>                    
-        </section>
-      </section>
-    </main>
   </nav>
+ <!-- main element -> about me + portfolio projects + contacts -->
+  <main class="page-wrapper">
+    <!-- about me -->
+    <section class="page-section" id="about">
+      <h2>About Me</h2>
+    </section>
+    <!-- about me paragraph -->
+    <section class="page-section" id="about-paragraph">
+      <p>Apart from the kitchen, I work well under pressure.<br>
+        I have excellent problem-solving skills and a logical approach to work. In the kitchen, I'm good at frying eggs.<br><br>
+        I have the power to learn new digital tools quickly and follow Lego instructions easily as well.<br>
+        I  can manage customer feedback well, but not so well when related to my Lego constructions.<br><br>
+        I love to work autonomously and creatively and integrated into a team.</p>
+    </section>
+    <!-- work -->
+    <section class="page-section" id="work">
+      <h2>Work</h2>
+    </section>
+    <!-- work projects -->
+    <section class="page-section" id="work-projects">
+      <!-- nesting grids -->
+      <!-- work projects container -->
+      <section class="work-projects-container">
+        <!-- featured project section -->
+        <section class="work-projects-section" id="featuredProject">
+          <h3>Surf Report</h3>
+          <h4>MERN Stack</h4>
+        </section>
+            <!-- project 1 section -->
+            <section class="work-projects-section" id="project1">
+              <h3>LED Wall</h3>
+              <h4>Node/IoT</h4>
+            </section>
+            <!-- project 2 section -->
+            <section class="work-projects-section" id="project2">
+              <h3>Calculator</h3>
+              <h4>React/ JavaScript/ CSS</h4>
+            </section>
+            <!-- project 3 section -->
+            <section class="work-projects-section" id="project3">
+              <h3>Pastel Puzzels</h3>
+              <h4>MERN Stack</h4>
+            </section>
+            <!-- project 4 section -->
+            <section class="work-projects-section" id="project4">
+              <h3>Run Buddy</h3>
+              <h4>HTML/ CSS</h4>
+            </section>
+      </section>
+    </section>
+    <!-- contact -->
+    <section class="page-section" id="contact">
+      <h2>Contact Me</h2>
+    </section>
+    <!-- contact links -->
+    <section class="page-section" id="contact-links">
+      <section>
+        <a href="tel:+5555555555">555.555.5555</a>
+        <a href="mailto: jr.belo@hotmail.com?subject=Hello.&body=Let's have a chat so that we can make it all start happening.">jr.belo@hotmail.com</a>
+        <a href="https://github.com/CZ-RBelo/" target=”_blank”>Git Hub</a>                    
+      </section>
+    </section>
+  </main>
+
 </body>
 </html>
