@@ -28,6 +28,10 @@ h5,
 h6 {
   margin: 0;
 }
+/* pin bottom button only visible on the mobile version  */
+.topButton {
+  visibility:hidden;
+}
 /* element grid about-me paragraph decoration */
 #about-paragraph p {
   color: var(--navBarColor);
@@ -94,6 +98,11 @@ font-size: 18px;
 #contact-links a:hover{
   border-bottom:3px solid var(--navBarTextColorHover);  
   font-weight: bold;  
+}
+/* navigation bar Links */
+.navBarLeft a {
+  color: var(--navBarTextColor);
+  text-decoration: none;
 }
 /* navigation bar Links */
 .navBarRight a {
@@ -276,6 +285,29 @@ mobile responsive website @media screen 1024px
 
 */
 @media screen and (max-width: 1024px) {
+
+  /* pin button only visible on the mobile version  */
+  .topButton {
+    visibility: visible;
+    background-color: var(--navBarColor);
+    border-color: var(--navBarColor);
+    padding: 10px 20px;
+    border-radius: 50%;
+    border-style: solid;
+    transform: rotateZ(-90deg);
+  }
+  /* top button a attributes  */
+  .topButton a {
+    color: var(--navBarTextColor);
+    text-decoration: none;
+    font-size: 20px;
+  }
+   /* top button element  */
+  #topButton {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+  }
 /* element grid definition*/
 .page-wrapper {
   display: block;
