@@ -13,7 +13,7 @@
 ### Repository
 
 Bootcamp - Portfolio.  
-An organized and effective way to show the projects I have been involved in this Bootcamp.
+An organized and effective way to show the projects that Rui Belo has been involved in this Bootcamp.
 
 ### Description
 
@@ -22,26 +22,24 @@ The Bootcamp Portfolio website is divided into six elements:
 **Header**  
 Includes a navigation bar with the brand name on the left and a link pointing to the Home Page, and on the right side are the **About Me**, **Work**, and **Contact Me** links pointing to the respective sections on the website.
 
-**Section Hero Banner**  
-Right after the top bar, there is the "Digital Marketing Meeting" image, which occupies the entire navigation element.
+**Section Bio Box**  
+Right after the top bar, there is the "Snowy mountains with blue sky" image, which occupies the entire navigation element.  
+And it has a floating bio box with a paragraph and a callout.
 
 **Section About Me**  
-Cool text about me.
+A block text where some of the skills are highlighted.
 
 **Section Work**  
-Here is where I will publish my most recent works.
+Section where will be published the most recent projects.
 
 **Section Contact Me**  
 Here is where the contacts are found.
-
-**Footer**  
-The footer is where the copyright is found.
 
 ### Mock-Up
 
 The image below illustrates the Bootcamp Portfolio web page appearance:  
 
-![Mock up Horiseon web page](images/rbelo-portfolio-mockup.jpg)
+![Mock-up Rui Belo Portfolio web page](images/rbelo-portfolio-mockup.png)
 
 ### Contributing
 
@@ -68,7 +66,7 @@ Ways you can contribute:
 
 ### Credits
 
-
+[Bio Box Background Photo by Gotta Be Worth It](https://www.pexels.com/photo/snowy-mountains-under-blue-sky-in-winter-5210453/)
 
 ### Contacts
 
